@@ -1,5 +1,5 @@
 ---
-"@fake-scope/fake-pkg": patch
+"layout-ui": patch
 ---
 
 add stack/column
