@@ -1,19 +1,77 @@
 {
   "name": "layout-ui",
   "version": "0.0.0-beta.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kuldeepkeshwar/layout-ui.git"
-  },
+  "repository": "https://github.com/kuldeepkeshwar/layout-ui",
+  "homepage": "https://github.com/kuldeepkeshwar/layout-ui",
+  "description": "layout components using css grid",
+  "sideEffects": false,
+  "source": "index.js",
+  "main": "dist/index.js",
+  "umd:main": "dist/index.umd.js",
+  "module": "dist/index.es.js",
   "author": "kuldeepkeshwar@gmail.com",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/kuldeepkeshwar/layout-ui/issues"
   },
-  "homepage": "https://github.com/kuldeepkeshwar/layout-ui#readme"
+  "scripts": {
+    "prepare": "npm run build",
+    "clean": "rm -rf ./dist",
+    "build": "microbundle",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "changeset publish"
+  },
+  "dependencies": {
+    "@filbert-js/browser-stylesheet": "^0.0.5",
+    "@filbert-js/core": "^0.0.7",
+    "@filbert-js/style-sheet-context": "^0.0.5",
+    "@filbert-js/theming": "^0.0.5",
+    "@filbert-js/types": "^0.0.5",
+    "react": "^16.13.1",
+    "prop-types": "15.7.2"
+  },
+  "peerDependencies": {
+    "@filbert-js/browser-stylesheet": "^0.0.5",
+    "@filbert-js/core": "^0.0.7",
+    "@filbert-js/style-sheet-context": "^0.0.5",
+    "@filbert-js/theming": "^0.0.5",
+    "@filbert-js/types": "^0.0.5",
+    "react": "^16.13.1",
+    "prop-types": "15.7.2"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.9.2",
+    "husky": "^3.0.9",
+    "lint-staged": "^10.2.11",
+    "microbundle": "^0.12.3",
+    "prettier": "1.14.3"
+  },
+  "keywords": [
+    "react",
+    "preact",
+    "layout",
+    "layout-ui",
+    "stack",
+    "columns",
+    "css-grid"
+  ],
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "post-commit": "git update-index --again",
+      "pre-commit": "lint-staged"
+    }
+  },
+  "collective": {
+    "type": "opencollective",
+    "url": "https://opencollective.com/layout-ui"
+  }
 }
