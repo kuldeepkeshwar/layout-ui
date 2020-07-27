@@ -1,6 +1,6 @@
 {
   "name": "layout-ui",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "repository": "https://github.com/kuldeepkeshwar/layout-ui",
   "homepage": "https://github.com/kuldeepkeshwar/layout-ui",
   "description": "layout components using css grid",
