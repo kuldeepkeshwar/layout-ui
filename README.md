@@ -1,3 +1,9 @@
+[![version](https://img.shields.io/npm/v/layout-ui)](https://www.npmjs.com/package/layout-ui)
+
+[![gzip size](https://img.badgesize.io/https://unpkg.com/layout-ui@latest/dist/index.es.js?compression=gzip)](https://unpkg.com/layout-ui)
+[![downloads](https://img.shields.io/npm/dw/layout-ui)](https://www.npmjs.com/package/layout-ui)
+
+
 # layout-ui
 
 React Components for Layout
