@@ -24,7 +24,7 @@ jobs:
       - name: Install Dependencies
         run: yarn
       - name: Build Packages
-        run: yarn build
+        run: yarn build-packages
       - name: Create Release Pull Request or Publish to npm
         id: changesets
         uses: changesets/action@master
