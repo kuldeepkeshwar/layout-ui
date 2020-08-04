@@ -11,7 +11,9 @@ const alignments = [
   'space-evenly',
 ];
 const alignmentsY = ['start', 'end', 'center', 'stretch'];
-
+function gaps({ theme: { space = {} } = {}, gap }) {
+  return space[gap] || gap || '0px';
+}
 function gridStyles({
   direction = 'vertical',
   height = 'auto',
@@ -19,13 +21,14 @@ function gridStyles({
   align = 'stretch',
   alignY = 'stretch',
   gap,
+  theme,
   children,
 }) {
   if (direction === 'vertical') {
     return `
       justify-items: ${alignY};
       align-content: ${align};
-      grid-row-gap: ${gap || 0};
+      grid-row-gap: ${gaps({ theme, gap })};
       height:${height};
       grid-template-columns:${width};
       grid-template-rows: repeat(${React.Children.count(children)}, auto);
@@ -34,7 +37,7 @@ function gridStyles({
     return `
       justify-content: ${align};
       align-items: ${alignY};
-      grid-column-gap: ${gap || 0};
+      grid-column-gap: ${gaps({ theme, gap })};
       width:${width};
       grid-template-rows:${height};
       grid-template-columns: repeat(${React.Children.count(children)}, auto);
