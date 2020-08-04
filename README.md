@@ -12,5 +12,5 @@
    <br/>
     <br/>
      <br/>
-  <a href="https://filbert-js.vercel.app/docs/install">Getting started</a> 
+  <a href="https://layout-ui.vercel.app/docs/install">Getting started</a> 
 </p>
