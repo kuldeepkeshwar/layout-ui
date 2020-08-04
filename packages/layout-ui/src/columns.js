@@ -7,9 +7,9 @@ const alignments = [
   'end',
   'center',
   'stretch',
-  'gap-around',
-  'gap-between',
-  'gap-evenly',
+  'space-around',
+  'space-between',
+  'space-evenly',
 ];
 const alignmentsY = ['start', 'end', 'center', 'stretch'];
 
@@ -21,31 +21,37 @@ function size({ theme: { sizes = {} } = {}, widths = [] }) {
 }
 const Grid = styled('div')`
   display: grid;
-  overflow: scroll;
-  width: ${({ inline }) => (inline ? 'max-content' : 'auto')};
   column-gap: ${gap};
+  height: ${({ height }) => height};
+  width: ${({ width }) => width};
   grid-template-columns: ${size};
-  justify-content: ${({ align }) => align || 'stretch'};
-  align-items: ${({ alignY }) => alignY || 'stretch'};
+  justify-content: ${({ align }) => align || 'start'};
+  align-items: ${({ alignY }) => alignY || 'start'};
 `;
-const Cell = styled('div')`
-  min-width: 0;
-`;
-export function Columns({ children, gap, align, alignY, inline }) {
+const Cell = styled('div')``;
+export function Columns({
+  children,
+  gap,
+  align,
+  alignY,
+  height = 'auto',
+  width = 'auto',
+}) {
   const widths = [];
   const Columns = React.Children.toArray(children).map(
-    ({ props: { width, children, ...rest }, type }) => {
+    ({ props: { width, children } }) => {
       widths.push(width === 'content' ? 'max-content' : width || '1fr');
-      return React.createElement(type, { ...rest }, children);
+      return children;
     },
   );
   return (
     <Grid
       gap={gap}
+      height={height}
+      width={width}
       widths={widths}
       align={align}
       alignY={alignY}
-      inline={inline}
     >
       {Columns}
     </Grid>
@@ -55,7 +61,6 @@ Columns.propTypes = {
   gap: PropTypes.string,
   align: PropTypes.oneOf(alignments),
   alignY: PropTypes.oneOf(alignmentsY),
-  inline: PropTypes.bool,
 };
 function Column({ children }) {
   return <Cell>{children}</Cell>;

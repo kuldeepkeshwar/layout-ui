@@ -17,6 +17,7 @@
   "scripts": {
     "prepare": "npm run build",
     "clean": "rm -rf ./dist",
+    "develop": "microbundle  watch --jsx React.createElement",
     "build": "microbundle  --no-sourcemap --jsx React.createElement",
     "test": "echo \"Error: no test specified\" && exit 1",
     "release": "changeset publish"
