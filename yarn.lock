@@ -4167,10 +4167,10 @@ babel-plugin-extract-import-names@^2.0.0-next.7:
   dependencies:
     "@babel/helper-plugin-utils" "7.10.4"
 
-babel-plugin-filbert@0.0.6:
-  version "0.0.6"
-  resolved "https://registry.yarnpkg.com/babel-plugin-filbert/-/babel-plugin-filbert-0.0.6.tgz#c7facaab5e6a1f7fd48cb2d1b4734b94bfe77efc"
-  integrity sha512-KKExBQf4NhlWmEjcSHaB/B0RGZYU3MKgdwKznSlCl1Q/UZmoAAu9puX/2ryAr8d/47vO5GVWI1J6VkRioTu8qw==
+babel-plugin-filbert@0.0.7:
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/babel-plugin-filbert/-/babel-plugin-filbert-0.0.7.tgz#192afd2e35204bc4fe2e53064e2f2c2fabfe640f"
+  integrity sha512-Fl1tef8LApbeIlyBBu/l8BiTolhHsf+Dmhgk9yTzcbUaLGnB0maQ2s+6p8vQRrKe/vaVJtPSYJr7qFwDDt5P+Q==
 
 babel-plugin-macros@^2.0.0, babel-plugin-macros@^2.8.0:
   version "2.8.0"
@@ -8303,14 +8303,14 @@ gatsby-plugin-catch-links@^2.3.7:
     "@babel/runtime" "^7.10.3"
     escape-string-regexp "^1.0.5"
 
-gatsby-plugin-filbert@0.0.8:
-  version "0.0.8"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-filbert/-/gatsby-plugin-filbert-0.0.8.tgz#75d2803a1623022b3689bc88f110ef433a9613f5"
-  integrity sha512-yyBQ5QXADWsBQyAULIGeYIQlo/IbQGPA5oQbQVvJQTVHWWNMFgfHxsEu3FCqwyWXHliLeF2OfLvqPLVnl8fe8g==
+gatsby-plugin-filbert@0.0.9:
+  version "0.0.9"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-filbert/-/gatsby-plugin-filbert-0.0.9.tgz#e6ae36166df880e3d4eb26403cf7e4e137521fe4"
+  integrity sha512-l+etjAbJJ8ABZve+hUFMJKsHXhUerrs+RSuWqvbqU4ZwD4rhD/fg4gzkkUAGWOl9nKanVoIEZLQCW/IQPM112w==
   dependencies:
     "@filbert-js/autoprefixer" "^0.0.5"
     "@filbert-js/server-stylesheet" "^0.0.5"
-    babel-plugin-filbert "0.0.6"
+    babel-plugin-filbert "0.0.7"
 
 gatsby-plugin-google-analytics@^2.3.10:
   version "2.3.13"
