@@ -126,8 +126,6 @@ exports.onCreateNode = async ({ node, actions, getNode }) => {
     } else {
       value = fileNode.name;
     }
-    console.log(docs, value);
-
     const [doc] = docs.filter((doc) => doc.fileName === value);
 
     const title = doc.name;
