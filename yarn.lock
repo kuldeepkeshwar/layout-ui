@@ -1358,6 +1358,14 @@
     "@filbert-js/css-parser" "^0.0.5"
     "@filbert-js/stylesheet" "^0.0.5"
 
+"@filbert-js/browser-stylesheet@^0.0.7":
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/@filbert-js/browser-stylesheet/-/browser-stylesheet-0.0.7.tgz#914fa12434444881dd0b43417d6bef3ad33b236e"
+  integrity sha512-1+vUHhtK6gnsnRUNMN6Lgy/3C3whPR5coomghMnY9X8I7+WdUjnDkH0nMScjPiOi1szGXj9XmHKEy4mmdBZfeQ==
+  dependencies:
+    "@filbert-js/css-parser" "^0.0.7"
+    "@filbert-js/stylesheet" "^0.0.5"
+
 "@filbert-js/core@^0.0.7":
   version "0.0.7"
   resolved "https://registry.yarnpkg.com/@filbert-js/core/-/core-0.0.7.tgz#230424b8d3744caa786e939452b29e0ac512a122"
@@ -1374,6 +1382,11 @@
   resolved "https://registry.yarnpkg.com/@filbert-js/css-ast/-/css-ast-0.0.5.tgz#a4617fc3f9fe9a15f13847b6de60f022337e095b"
   integrity sha512-3X8LNfkjk7TA045Bg5YnZMxIMlOEjrLxwIvPy7snsccLXWi6+/ceJDhIXKVcMU1w5NcGBxgJi6aUytq61VJjcg==
 
+"@filbert-js/css-ast@^0.0.7":
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/@filbert-js/css-ast/-/css-ast-0.0.7.tgz#600e04a5f5fb995c71d9e5b71b4f082236d08fba"
+  integrity sha512-ayUrvMP6jMV9H1KKugPkBtLz5O9a6noDjsvaaAms8Ih9Uwo8O3GYcKAPZzhXiS5Jlfkh69ek8wkuLmI9s0T0lA==
+
 "@filbert-js/css-parser@^0.0.5":
   version "0.0.5"
   resolved "https://registry.yarnpkg.com/@filbert-js/css-parser/-/css-parser-0.0.5.tgz#4c9b3bebfbe6dc01b3fa86846e19b062af1611a4"
@@ -1381,13 +1394,20 @@
   dependencies:
     "@filbert-js/css-ast" "^0.0.5"
 
-"@filbert-js/server-stylesheet@^0.0.5":
-  version "0.0.5"
-  resolved "https://registry.yarnpkg.com/@filbert-js/server-stylesheet/-/server-stylesheet-0.0.5.tgz#51b0e64fa58e54ccc1520d34bbaf9f70d7731885"
-  integrity sha512-7RjnG8dnM8cHo1DnJiEunr8nruhba5opNyEHS9ijk2pQcNEtGTG5+Sot/obfW+CRjZf8QASFnhk+H8VbYmzkQw==
+"@filbert-js/css-parser@^0.0.7":
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/@filbert-js/css-parser/-/css-parser-0.0.7.tgz#6ea88d82493bb815d4dd1c62323aa57eaf56fe49"
+  integrity sha512-p8VQqmJr5uA+99MLKn2DVPp9XQGH+eFj2EQj58R8PKrF1vki1CJ7mkA39Po7Nmd0d0K2G0sA7F31M7A8ehMI9w==
   dependencies:
-    "@filbert-js/css-parser" "^0.0.5"
-    "@filbert-js/style-sheet-context" "^0.0.5"
+    "@filbert-js/css-ast" "^0.0.7"
+
+"@filbert-js/server-stylesheet@^0.0.7":
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/@filbert-js/server-stylesheet/-/server-stylesheet-0.0.7.tgz#48c64e074b5af2d97f9a3e16c1d0844276104ca0"
+  integrity sha512-ukd38iATpQ+LEs/7LRexo2WQzn5HuXaN+4fMBdZBWtVs9D+oX+f3fw65q3ecRaetacmd4f5QzVv3mTgsGqIIPw==
+  dependencies:
+    "@filbert-js/css-parser" "^0.0.7"
+    "@filbert-js/style-sheet-context" "^0.0.7"
     "@filbert-js/stylesheet" "^0.0.5"
     react "^16.8.6"
 
@@ -1397,6 +1417,14 @@
   integrity sha512-W2K9Q2hoqv/8Kab0NLCyAOHq+Xw6weRGKWctM7YeeWNeCE5iXS9OgkQ/UQXdawq8p6LtaTG9c59Qct+bEMjNEA==
   dependencies:
     "@filbert-js/browser-stylesheet" "^0.0.5"
+    react "^16.8.6"
+
+"@filbert-js/style-sheet-context@^0.0.7":
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/@filbert-js/style-sheet-context/-/style-sheet-context-0.0.7.tgz#612a8c0b348a10fc21c0bbe759dc28a91aa9bac0"
+  integrity sha512-nZn76izzPvRm07p9bvdYiTY0iJpPAORV8NjI1xOSYf1+h4WDMF/GG4Noh390RmJx7U4n0ZLLdw+HC0brBZI14w==
+  dependencies:
+    "@filbert-js/browser-stylesheet" "^0.0.7"
     react "^16.8.6"
 
 "@filbert-js/stylesheet@^0.0.5":
@@ -7932,13 +7960,13 @@ gatsby-plugin-catch-links@^2.3.7:
     "@babel/runtime" "^7.10.3"
     escape-string-regexp "^1.0.5"
 
-gatsby-plugin-filbert@0.0.9:
-  version "0.0.9"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-filbert/-/gatsby-plugin-filbert-0.0.9.tgz#e6ae36166df880e3d4eb26403cf7e4e137521fe4"
-  integrity sha512-l+etjAbJJ8ABZve+hUFMJKsHXhUerrs+RSuWqvbqU4ZwD4rhD/fg4gzkkUAGWOl9nKanVoIEZLQCW/IQPM112w==
+gatsby-plugin-filbert@0.0.11:
+  version "0.0.11"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-filbert/-/gatsby-plugin-filbert-0.0.11.tgz#2bb46981f028652ef6487e0c255b795ec164710d"
+  integrity sha512-gBJMxEuuYUf8JVRcSMOBNOzdM82rI7sM8wdtQWFNs2gfSIVapdn1ZFLyAhAubXzZ00nC4atxfaEivT40qZBWAQ==
   dependencies:
     "@filbert-js/autoprefixer" "^0.0.5"
-    "@filbert-js/server-stylesheet" "^0.0.5"
+    "@filbert-js/server-stylesheet" "^0.0.7"
     babel-plugin-filbert "0.0.7"
 
 gatsby-plugin-google-analytics@^2.3.10:
