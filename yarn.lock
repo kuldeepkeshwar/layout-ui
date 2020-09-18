@@ -1427,12 +1427,12 @@
     unique-filename "^1.1.1"
     which "^1.3.1"
 
-"@filbert-js/autoprefixer@^0.0.5":
-  version "0.0.5"
-  resolved "https://registry.yarnpkg.com/@filbert-js/autoprefixer/-/autoprefixer-0.0.5.tgz#ab368eea4ad4017b99b84ab67078b107b8297681"
-  integrity sha512-yrw/ukZAr6G6oA8naqlHe1GkpleeWHY4R9A8DAyXgviIuyibxz6iojZMPC1yqV5iReAi1/mf0zOSA8eySMrgcA==
+"@filbert-js/autoprefixer@^0.0.6":
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/@filbert-js/autoprefixer/-/autoprefixer-0.0.6.tgz#8c63abf1dd4a9dba5c680cec3cf8c9b32b6602c5"
+  integrity sha512-Gmc/XZaX6zs83C414oMxKCKSOx5jS3QwvPH0VsGpF0y7xiiZZPYAERq+TWj99ppinxXTWvfdIQjKtm+J8NDh8g==
   dependencies:
-    tiny-css-prefixer "^1.1.4"
+    style-vendorizer "^1.0.1"
 
 "@filbert-js/browser-stylesheet@^0.0.5":
   version "0.0.5"
@@ -1440,6 +1440,14 @@
   integrity sha512-MbxHcYRXOzyhmq7Em7WSQzHRHqowyLevjJ+UdkEQwwL697dHeCGEJpYLlRq7WFafIaZCjqZpWaoL30aF6tfKvA==
   dependencies:
     "@filbert-js/css-parser" "^0.0.5"
+    "@filbert-js/stylesheet" "^0.0.5"
+
+"@filbert-js/browser-stylesheet@^0.0.7":
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/@filbert-js/browser-stylesheet/-/browser-stylesheet-0.0.7.tgz#914fa12434444881dd0b43417d6bef3ad33b236e"
+  integrity sha512-1+vUHhtK6gnsnRUNMN6Lgy/3C3whPR5coomghMnY9X8I7+WdUjnDkH0nMScjPiOi1szGXj9XmHKEy4mmdBZfeQ==
+  dependencies:
+    "@filbert-js/css-parser" "^0.0.7"
     "@filbert-js/stylesheet" "^0.0.5"
 
 "@filbert-js/core@^0.0.7":
@@ -1458,6 +1466,11 @@
   resolved "https://registry.yarnpkg.com/@filbert-js/css-ast/-/css-ast-0.0.5.tgz#a4617fc3f9fe9a15f13847b6de60f022337e095b"
   integrity sha512-3X8LNfkjk7TA045Bg5YnZMxIMlOEjrLxwIvPy7snsccLXWi6+/ceJDhIXKVcMU1w5NcGBxgJi6aUytq61VJjcg==
 
+"@filbert-js/css-ast@^0.0.7":
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/@filbert-js/css-ast/-/css-ast-0.0.7.tgz#600e04a5f5fb995c71d9e5b71b4f082236d08fba"
+  integrity sha512-ayUrvMP6jMV9H1KKugPkBtLz5O9a6noDjsvaaAms8Ih9Uwo8O3GYcKAPZzhXiS5Jlfkh69ek8wkuLmI9s0T0lA==
+
 "@filbert-js/css-parser@^0.0.5":
   version "0.0.5"
   resolved "https://registry.yarnpkg.com/@filbert-js/css-parser/-/css-parser-0.0.5.tgz#4c9b3bebfbe6dc01b3fa86846e19b062af1611a4"
@@ -1465,13 +1478,20 @@
   dependencies:
     "@filbert-js/css-ast" "^0.0.5"
 
-"@filbert-js/server-stylesheet@^0.0.5":
-  version "0.0.5"
-  resolved "https://registry.yarnpkg.com/@filbert-js/server-stylesheet/-/server-stylesheet-0.0.5.tgz#51b0e64fa58e54ccc1520d34bbaf9f70d7731885"
-  integrity sha512-7RjnG8dnM8cHo1DnJiEunr8nruhba5opNyEHS9ijk2pQcNEtGTG5+Sot/obfW+CRjZf8QASFnhk+H8VbYmzkQw==
+"@filbert-js/css-parser@^0.0.7":
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/@filbert-js/css-parser/-/css-parser-0.0.7.tgz#6ea88d82493bb815d4dd1c62323aa57eaf56fe49"
+  integrity sha512-p8VQqmJr5uA+99MLKn2DVPp9XQGH+eFj2EQj58R8PKrF1vki1CJ7mkA39Po7Nmd0d0K2G0sA7F31M7A8ehMI9w==
   dependencies:
-    "@filbert-js/css-parser" "^0.0.5"
-    "@filbert-js/style-sheet-context" "^0.0.5"
+    "@filbert-js/css-ast" "^0.0.7"
+
+"@filbert-js/server-stylesheet@^0.0.7":
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/@filbert-js/server-stylesheet/-/server-stylesheet-0.0.7.tgz#48c64e074b5af2d97f9a3e16c1d0844276104ca0"
+  integrity sha512-ukd38iATpQ+LEs/7LRexo2WQzn5HuXaN+4fMBdZBWtVs9D+oX+f3fw65q3ecRaetacmd4f5QzVv3mTgsGqIIPw==
+  dependencies:
+    "@filbert-js/css-parser" "^0.0.7"
+    "@filbert-js/style-sheet-context" "^0.0.7"
     "@filbert-js/stylesheet" "^0.0.5"
     react "^16.8.6"
 
@@ -1481,6 +1501,14 @@
   integrity sha512-W2K9Q2hoqv/8Kab0NLCyAOHq+Xw6weRGKWctM7YeeWNeCE5iXS9OgkQ/UQXdawq8p6LtaTG9c59Qct+bEMjNEA==
   dependencies:
     "@filbert-js/browser-stylesheet" "^0.0.5"
+    react "^16.8.6"
+
+"@filbert-js/style-sheet-context@^0.0.7":
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/@filbert-js/style-sheet-context/-/style-sheet-context-0.0.7.tgz#612a8c0b348a10fc21c0bbe759dc28a91aa9bac0"
+  integrity sha512-nZn76izzPvRm07p9bvdYiTY0iJpPAORV8NjI1xOSYf1+h4WDMF/GG4Noh390RmJx7U4n0ZLLdw+HC0brBZI14w==
+  dependencies:
+    "@filbert-js/browser-stylesheet" "^0.0.7"
     react "^16.8.6"
 
 "@filbert-js/stylesheet@^0.0.5":
@@ -8414,13 +8442,13 @@ gatsby-plugin-catch-links@^2.3.7:
     "@babel/runtime" "^7.11.2"
     escape-string-regexp "^1.0.5"
 
-gatsby-plugin-filbert@0.0.9:
-  version "0.0.9"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-filbert/-/gatsby-plugin-filbert-0.0.9.tgz#e6ae36166df880e3d4eb26403cf7e4e137521fe4"
-  integrity sha512-l+etjAbJJ8ABZve+hUFMJKsHXhUerrs+RSuWqvbqU4ZwD4rhD/fg4gzkkUAGWOl9nKanVoIEZLQCW/IQPM112w==
+gatsby-plugin-filbert@0.0.12:
+  version "0.0.12"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-filbert/-/gatsby-plugin-filbert-0.0.12.tgz#1deb1dcae40031fef2502992c1f8e8de801b49fc"
+  integrity sha512-jyWHjBEqtsjw8utm6tyW3q8GIQOqIMV2ipqhuMgGGu7QZD3n3QfYgJimC7tQJDB7troAFpV/ZcHJYZBr5j2/JQ==
   dependencies:
-    "@filbert-js/autoprefixer" "^0.0.5"
-    "@filbert-js/server-stylesheet" "^0.0.5"
+    "@filbert-js/autoprefixer" "^0.0.6"
+    "@filbert-js/server-stylesheet" "^0.0.7"
     babel-plugin-filbert "0.0.7"
 
 gatsby-plugin-google-analytics@^2.3.10:
@@ -16834,6 +16862,11 @@ style-to-object@^0.3.0:
   dependencies:
     inline-style-parser "0.1.1"
 
+style-vendorizer@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/style-vendorizer/-/style-vendorizer-1.0.1.tgz#5e80d7abd233cc6a7826539f67a0edfa6ce0577c"
+  integrity sha512-JC+Czt1q7nghLiBEwzEcZ3Nng2fTubQe5mohd2Htp+jlCmzmjZpoZu/t9vP+a7RNw+UCwbGJASaioUhZsjWHng==
+
 stylehacks@^4.0.0:
   version "4.0.3"
   resolved "https://registry.yarnpkg.com/stylehacks/-/stylehacks-4.0.3.tgz#6718fcaf4d1e07d8a1318690881e8d96726a71d5"
@@ -17166,11 +17199,6 @@ timsort@^0.3.0:
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/timsort/-/timsort-0.3.0.tgz#405411a8e7e6339fe64db9a234de11dc31e02bd4"
   integrity sha1-QFQRqOfmM5/mTbmiNN4R3DHgK9Q=
-
-tiny-css-prefixer@^1.1.4:
-  version "1.1.4"
-  resolved "https://registry.yarnpkg.com/tiny-css-prefixer/-/tiny-css-prefixer-1.1.4.tgz#b96a0aa6b312227d996e9c303645e3ae2f194086"
-  integrity sha512-QLnDGLUmMkNlSuWogBaSu92uQnvWhcQwUc+MG8L4YgBkjSmBkAz29pTq+8Rh3YWR1TwPrjuZDKWzO7v4PXkipQ==
 
 tiny-emitter@^2.0.0:
   version "2.1.0"
