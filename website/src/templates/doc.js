@@ -16,6 +16,17 @@ import { SEO } from '../components/SEO';
 import StaticCode from '../components/StaticCode';
 import { graphql } from 'gatsby';
 
+function Code({ children, editor, metastring }) {
+  if (editor === 'live') {
+    const compiled = metastring.replace('editor=live compiled=', '').trim();
+    return <Playground code={children} compiled={compiled}></Playground>;
+  } else if (editor === 'static') {
+    const code = children.replace('editor=static', '').trim();
+    return <StaticCode code={code}></StaticCode>;
+  } else {
+    return children;
+  }
+}
 export default ({ data: { doc } }) => {
   const {
     fields: { slug, title },
@@ -33,6 +44,7 @@ export default ({ data: { doc } }) => {
           components={{
             'live-code': Playground,
             'static-code': StaticCode,
+            code: Code,
             blockquote: Blockquote,
             p: Paragraph,
             pre: Pre,
