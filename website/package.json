@@ -28,7 +28,7 @@
   "devDependencies": {
     "@babel/preset-react": "^7.10.4",
     "babel-standalone": "^6.26.0",
-    "escape-goat": "1.3.0",
+    "escape-goat": "3.0.0",
     "gatsby": "latest",
     "gatsby-image": "latest",
     "gatsby-plugin-catch-links": "latest",
