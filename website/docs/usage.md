@@ -8,8 +8,7 @@ or
 
 - Stack
 
-  ```jsx
-  // @editor
+  ```jsx editor=static
   import { Stack } from 'layout-ui';
 
   render(
@@ -22,8 +21,7 @@ or
 
 - Columns
 
-  ```jsx
-  // @editor
+  ```jsx editor=static
   import { Columns } from 'layout-ui';
 
   render(
