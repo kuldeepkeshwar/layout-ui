@@ -11,6 +11,7 @@ module.exports = {
     keywords,
   },
   plugins: [
+    'gatsby-plugin-filbert',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -62,7 +63,6 @@ module.exports = {
       },
     },
 
-    'gatsby-plugin-filbert',
     `gatsby-plugin-react-helmet`,
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
