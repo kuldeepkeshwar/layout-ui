@@ -1,7 +1,6 @@
 ### Width & Gap
 
-```js
-// @live
+```js editor=live
 import { Columns } from 'layout-ui';
 
 render(
@@ -23,8 +22,7 @@ render(
 
 ### Alignment (main axis)
 
-```js
-// @live
+```js editor=live
 import { Stack, Columns } from 'layout-ui';
 
 render(
@@ -126,8 +124,7 @@ render(
 
 ### Alignment (cross axis)
 
-```js
-// @live
+```js editor=live
 import { Stack, Columns } from 'layout-ui';
 
 render(
