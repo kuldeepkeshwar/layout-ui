@@ -28,7 +28,7 @@
     "@filbert-js/style-sheet-context": "^0.0.5",
     "@filbert-js/theming": "^0.0.5",
     "@filbert-js/types": "^0.0.5",
-    "react": "^16.13.1",
+    "react": "^17.0.0",
     "prop-types": "15.7.2"
   },
   "peerDependencies": {
@@ -37,7 +37,7 @@
     "@filbert-js/style-sheet-context": "^0.0.5",
     "@filbert-js/theming": "^0.0.5",
     "@filbert-js/types": "^0.0.5",
-    "react": "^16.13.1",
+    "react": "^17.0.0",
     "prop-types": "15.7.2"
   },
   "devDependencies": {
