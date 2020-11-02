@@ -1412,7 +1412,7 @@
     "@filbert-js/css-parser" "^0.0.7"
     "@filbert-js/stylesheet" "^0.0.5"
 
-"@filbert-js/core@^0.0.10", "@filbert-js/core@^0.0.7", "@filbert-js/core@latest":
+"@filbert-js/core@^0.0.10", "@filbert-js/core@^0.0.7":
   version "0.0.10"
   resolved "https://registry.yarnpkg.com/@filbert-js/core/-/core-0.0.10.tgz#d6d1e329b6e0f7eeee668c6e4a85b8c7e06becc1"
   integrity sha512-TFz8yL7pMOp4vmx7yZopQPee3rprZsVVnCUkw5G2c6bgLfq905cOpguCGdNwxGaZM6wu5xXUjRRceNipCMZXXw==
@@ -14907,7 +14907,7 @@ react-style-singleton@^2.1.0:
     invariant "^2.2.4"
     tslib "^1.0.0"
 
-react@16.12.0, react@^16.12.0, react@^16.13.1, react@^16.8.0, react@^16.8.6:
+react@16.12.0, react@^16.8.0, react@^16.8.6, react@^17.0.1:
   version "16.12.0"
   resolved "https://registry.yarnpkg.com/react/-/react-16.12.0.tgz#0c0a9c6a142429e3614834d5a778e18aa78a0b83"
   integrity sha512-fglqy3k5E+81pA8s+7K0/T3DBCF0ZDOher1elBFzF7O6arXJgzyu/FW+COxFvAWXJoJN9KIZbT2LXlukwphYTA==
