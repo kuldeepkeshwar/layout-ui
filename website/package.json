@@ -46,7 +46,7 @@
     "gatsby-source-filesystem": "latest",
     "gatsby-transformer-sharp": "latest",
     "gatsby-transformer-yaml": "latest",
-    "prettier": "2.1.2",
+    "prettier": "2.2.1",
     "prop-types": "^15.7.2",
     "unist-util-visit": "^2.0.2",
     "webpack-bundle-analyzer": "^3.8.0"
