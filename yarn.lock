@@ -1466,7 +1466,7 @@
     "@filbert-js/stylesheet" "^0.0.5"
     react "^16.8.6"
 
-"@filbert-js/style-sheet-context@^0.0.7", "@filbert-js/style-sheet-context@^0.0.8":
+"@filbert-js/style-sheet-context@^0.0.7", "@filbert-js/style-sheet-context@^0.0.9":
   version "0.0.7"
   resolved "https://registry.yarnpkg.com/@filbert-js/style-sheet-context/-/style-sheet-context-0.0.7.tgz#612a8c0b348a10fc21c0bbe759dc28a91aa9bac0"
   integrity sha512-nZn76izzPvRm07p9bvdYiTY0iJpPAORV8NjI1xOSYf1+h4WDMF/GG4Noh390RmJx7U4n0ZLLdw+HC0brBZI14w==
